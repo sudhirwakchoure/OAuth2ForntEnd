@@ -7,6 +7,9 @@ import { useAuth } from "./config/authContext";
 function App() {
   const { isAuthenticated, setIsAuthenticated, keyCloakInstance } = useAuth();
 
+  console.log(keyCloakInstance);// to check what are inside that using devtools
+
+  
   console.log(keyCloakInstance?.token);
 
   return (
