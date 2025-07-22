@@ -8,7 +8,7 @@ function App() {
   const { isAuthenticated, setIsAuthenticated, keyCloakInstance } = useAuth();
 
   console.log(keyCloakInstance);// to check what are inside that using devtools
-
+    console.log(keyCloakInstance?.token);// to add token to get refresh token and all 
   
   console.log(keyCloakInstance?.token);
 
