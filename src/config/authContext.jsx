@@ -14,7 +14,8 @@ export const AuthProvider = ({ children }) => {
 
     keycloak
       .init({
-        onLoad: "login-required",
+        //onLoad: "login-required", //it use when use not login the dyrectlly redyrect login page 
+        onLoad: "check-sso",  //it use when use not login the dyrectlly redyrect logout page 
         pkceMethod: "S256",
       })
       .then((authenticated) => {
